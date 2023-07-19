@@ -1,0 +1,32 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  text-decoration: none;
+  list-style:none;
+  scroll-behavior: smooth;
+}
+
+
+:root{
+  --secondary:rgb(196, 5, 75);
+  --black:black;
+  --white:white;
+  --background-Color:#2a2a2a;
+  --text-Color:#fff;
+  --secondary-Color:#ccc;
+  --mainColor:#a30d67;
+  --big-font:5rem;
+  --h2-font:3rem;
+  --p-font: 1.1rem;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+
+}
+
+  
