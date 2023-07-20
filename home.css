@@ -61,7 +61,7 @@
     font-weight: 500;
   }
 
-  .home-text h1{
+  .home-text h3{
     font-size: var(--big-font);
     font-weight: 700;
     color: var(--text-Color);
