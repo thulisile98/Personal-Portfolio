@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   list-style:none;
   scroll-behavior: smooth;
@@ -11,22 +11,74 @@
 
 
 :root{
-  --secondary:rgb(196, 5, 75);
-  --black:black;
+  --secondary:rgb(204, 161, 96);
   --white:white;
-  --background-Color:#2a2a2a;
+  --background-Color:#000000;
   --text-Color:#fff;
   --secondary-Color:#ccc;
-  --mainColor:#a30d67;
+  --mainColor:rgb(204, 161, 96);
   --big-font:5rem;
   --h2-font:3rem;
   --p-font: 1.1rem;
 }
 
-body, html {
-  height: 100%;
-  margin: 0;
-
+body {
+  background: var(--background-Color);
+  color:var(--text-Color);
 }
 
+header{
+  position: fixed;
+  width:100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 22px 15%;
+  border-bottom: 1px solid transparent;
+  transition: all .45s ease;
   
+}
+
+.logo{
+  color: var(--text-Color);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+span{
+  color: var(--mainColor);
+}
+
+.navlist{
+  display: flex;
+}
+
+.navlist a{
+  color: var(--secondary-Color);
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 25px;
+  transition: all .45s ease;
+}
+
+.navlist a:hover{
+  color: var(--mainColor);
+}
+
+.navlist a.active{
+  color: var(--mainColor);
+}
+  
+#menu-icon{
+  font-size: 35px;
+  color: var(--text-Color);
+  z-index: 1001;
+  cursor: pointer;
+  margin: left;
+  display: none;
+}
