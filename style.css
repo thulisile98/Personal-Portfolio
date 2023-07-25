@@ -93,7 +93,7 @@ section {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url(images/lap2.webp);
+  background-image: url(images/bg.webp);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -102,7 +102,7 @@ section {
 }
 
 .slide {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .one {
@@ -152,6 +152,7 @@ section {
   letter-spacing: 1px;
   font-weight: 600;
   transition: all .45s ease;
+
 }
 
 .btn:hover {
@@ -198,6 +199,27 @@ section {
   display: inline-flex;
 }
 
+
+
+.home-text {
+    padding: 0 15px; 
+}
+
+
+h3 {
+  font-size: 2rem; 
+}
+
+
+.button a {
+  margin-bottom: 10px; 
+}
+
+.socials a {
+  font-size: 24px; 
+  margin: 0 10px;
+}
+
 /* ABOUT STYLING */
 
 
@@ -209,7 +231,7 @@ section {
 }
 
 .about-img img {
-  border-radius: 50px;
+  border-radius: 50%;
   width: 550px;
   height: 550px;
 }
@@ -217,6 +239,9 @@ section {
 .about-img {
   display: flex;
   align-items: center;
+ border-style: solid;
+border-radius: 50%;
+  border-color: var(--mainColor);
 }
 
 .about-text {
@@ -508,6 +533,11 @@ section {
 }
 
 /* /// PORTFOLIO STYLING // */
+
+#portfolio {
+  padding: 20px 15% 100px;
+  height: 80%;
+}
 .portfolio .main-text {
   height: 40vh;
 }
@@ -605,8 +635,10 @@ section {
 }
 
 .contact-text h2 {
-  font-size: 1rem;
-  line-height: 1;
+  font-size: 3.5rem;
+  line-height: 2;
+  margin-top: -15%;
+  text-align: center;
 }
 
 .contact-text p {
@@ -690,4 +722,155 @@ form textarea {
 .contact-form .submit:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; 
+}
+
+.end{
+  padding: 20px 15%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.end-text p{
+  color: var(--text-Color);
+  font-size: 14px;
+}
+
+.top i{
+ padding: 10px;
+ border-radius: 8px;
+ font-size: 15px;
+ color: var(--text-Color);
+font-weight: 800;
+background: var(--mainColor);
+}
+
+/* Responsive CSS */
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 2.5%;
+  }
+
+  .home-text h3 {
+    font-size: 2rem;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-img img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .skill-main {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .portfolio-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .end-text p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  header {
+    padding: 15px 5%;
+  }
+
+  .about-img img {
+    width: 70%;
+  }
+}
+
+
+@media (min-width: 1201px) {
+  header {
+    padding: 22px 15%;
+  }
+
+  .home-text h3 {
+    font-size: 3rem;
+  }
+
+  .about-img img {
+    width: 550px;
+    height: 550px;
+  }
+
+  .skill-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-content {
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  }
+
+  .contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-text h2 {
+    font-size: 3.5rem;
+  }
+
+  .end-text p {
+    font-size: 14px;
+  }
+
+  .home-text {
+    padding: 0 10px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .button a {
+    margin-bottom: 5px;
+  }
+
+  .socials a {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+          
+}
+@media (max-width: 768px) {
+  video {
+    object-position: center;
+  }
 }
