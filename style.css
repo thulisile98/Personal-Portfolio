@@ -92,7 +92,8 @@ section {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url(images/bg.webp);
+  background-image: url('images/black-business-computer-desk.jpg');
+
   background-size: cover;
   background-position: center;
   display: flex;
@@ -108,28 +109,28 @@ section {
   display: inline-block;
   margin-right: 7px;
   font-size: var(--big-font);
-  font-weight: 500;
+  font-weight: 900;
   color: var(--text-Color);
   align-items: center;
   justify-content: center;
 }
-
-/* .two {
-  display: inline-block;
-  margin-right: 7px;
-  font-size: var(--big-font);
-  font-weight: 500;
-  color: var(--text-Color);
-  align-items: center;
-  justify-content: center;
-} */
 
 
 .home-text h3 {
   color: var(--text-Color);
   margin: 0 0 35px;
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 900;
+  line-height: 1.1;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-text span {
+  color: var(--mainColor);
+  margin: 0 0 35px;
+  font-size: 3rem;
+  font-weight: 900;
   line-height: 1.1;
   align-items: center;
   justify-content: center;
@@ -260,7 +261,12 @@ h3 {
   display: center;
 }
 
+hr{
+  border-top: 2px solid var(--mainColor);
+}
+
 /* SKILLS STYLING */
+
 #skills {
   padding: 20px 15% 100px;
   height: 80%;
@@ -300,8 +306,6 @@ h3 {
   font-size: 32px;
   font-weight: bold;
 }
-
-
 
 .skill-main h3 {
   margin-bottom: 2rem;
@@ -812,6 +816,37 @@ video {
     align-items: center;
   }
 
+  .about-text p{
+    width: 100%;
+    display: contents;
+    font-size: small;
+  }
+
+  .about-btn {
+    width: 170px;
+    height: 60px;
+    text-align: center;
+    line-height: 25px;
+    display: center;
+}
+hr{
+  border-top: 2px solid var(--mainColor);
+  width: 60px;
+
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--mainColor);
+  border-radius: 5px;
+  color: var(--text-Color);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 200;
+  transition: all .45s ease;
+}
+
   .skill-main {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -836,7 +871,7 @@ video {
   }
 
   .skill-left .skill-bar .bar {
-    width: 500px;
+    width: 250px;
     height: 4px;
     border-radius: 10px;
     margin-top: 2px;
@@ -853,12 +888,23 @@ video {
     box-shadow: #828282c7;
   }
 
+  .main-text span {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
 
 }
 
 @media (min-width: 795px) and (max-width: 1200px) {
   header {
     padding: 15px 5%;
+  }
+  .about-img {
+    border-style: hidden;
+    border-color: transparent;
+    display: contents;
   }
 
   .about-img img {
@@ -879,7 +925,6 @@ video {
   .home-text h3 {
     font-size: 3rem;
   }
-
 
 
   .about-img img {
@@ -923,16 +968,131 @@ video {
     font-size: 20px;
     margin: 0 5px;
   }
-
-}
-
-@media (max-width: 795px) {
   body {
     display: block;
     width: 100%;
   }
+
 }
 
+
+@media (min-width: 540px) and (max-width: 1200px) {
+  .skill-left .skill-bar .bar {
+    width: 400px;
+    height: 4px;
+    border-radius: 10px;
+    margin-top: 2px;
+
+  }
+}
+
+
+@media (max-width: 1100px) {
+.home{
+  height: 87vh;
+}
+
+}
+
+@media(max-width: 840px){
+  #menu-icon{
+    display: block;
+  }
+  .navlist{
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--background-Color);
+    text-align: left;
+    transition: all .45s ease;
+  }
+  .navlist a{
+    display: block;
+    margin: 17px;
+    font-size: 20px;
+    transition: all.45s ease;
+    color: var(--text-Color);
+  }
+  .navlist a:hover{
+    color:var(--mainColor);
+  }
+  .navlist a.active{
+    color: var(--text-Color);
+  }
+  .navlist.open{
+    top: 100%;
+  }
+}
+
+@media (max-width: 280px) {
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: var(--background-Color);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  margin-bottom: 5px;
+}
+
+.one {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: var(--big-font);
+  font-weight: 500;
+  color: var(--text-Color);
+  text-align: right;
+  justify-content: center;
+}
+
+
+.home-text h3 {
+  color: var(--text-Color);
+  margin: 0 0 15px;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.1;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-text span {
+  color: var(--mainColor);
+  margin: 0 0 15px;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.1;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--mainColor);
+  border-radius: 5px;
+  color: var(--text-Color);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all .45s ease;
+
+}
+}
 @media (max-width: 768px) {
   video {
     object-position: center;
