@@ -11,10 +11,11 @@ window.onscroll=()=>{
     navlist.classList.remove('open');
 };
 
-var typingEffect = new Typed(".multiText",{
-    strings:["DEVELOPER","DESIGNER"],
-    loop:true,
-    typeSpeed:100,
-    backSpeed:80,
-    backDelay:1500
-})
+// var typingEffect = new Typed(".multiText",{
+//     strings:["DEVELOPER","DESIGNER"],
+//     loop:true,
+//     typeSpeed:100,
+//     backSpeed:80,
+//     backDelay:1500
+// })
+

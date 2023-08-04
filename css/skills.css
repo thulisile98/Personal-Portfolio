@@ -1,0 +1,267 @@
+#skills {
+    padding: 20px 15% 100px;
+    height: 80%;
+  }
+  
+  .skills {
+    background: linear-gradient(var(--skillColor), var(--background-Color));
+  }
+  
+  .skill-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+  }
+  
+  .skill-bar {
+    margin-bottom: 2.3rem;
+  }
+  
+  .main-text {
+    color: var(--text-Color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+  }
+  
+  .main-text span {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .main-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .skill-main h3 {
+    margin-bottom: 2rem;
+    font-size: var(--p-font);
+    text-align: center;
+  }
+  
+  .skill-left .skill-bar .info {
+    display: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .skill-left .skill-bar .bar {
+    width: 1000px;
+    height: 20px;
+    background-color: var(--background-Color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .skill-bar .bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #e4cc7bc8;
+    border-radius: 25px;
+    box-shadow: #828282c7;
+  }
+  
+  .skill-bar .bar .html {
+    width: 95%;
+    animation: html 4s;
+  }
+  
+  .skill-bar .bar .figma {
+    width: 72%;
+    animation: figma 3s;
+  }
+  
+  .skill-bar .bar .angular {
+    width: 98%;
+    animation: angular 2s;
+  }
+  
+  .skill-bar .bar .css {
+    width: 85%;
+    animation: css 5s;
+  }
+  
+  .skill-bar .bar .bootstrap {
+    width: 100%;
+    animation: bootstrap 5s;
+  }
+  
+  .skill-bar .bar .firebase {
+    width: 98%;
+    animation: firebase 5s;
+  }
+  
+  .skill-bar .bar .mssql {
+    width: 74%;
+    animation: mssql 5s;
+  }
+  
+  .skill-bar .bar .c {
+    width: 95%;
+    animation: c 5s;
+  }
+  
+  .skill-bar .bar .java {
+    width: 99%;
+    animation: java 5s;
+  }
+  
+  .skill-bar .bar .javascript {
+    width: 98.2%;
+    animation: javascript 5s;
+  }
+  
+  .skill-bar .bar .typescript {
+    width: 90.2%;
+    animation: typescript 5s;
+  }
+  
+  .skill-bar .bar .react {
+    width: 65%;
+    animation: react 5s;
+  }
+  
+  
+  @keyframes html {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 95%;
+    }
+  
+  }
+  
+  @keyframes css {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 85%;
+    }
+  
+  }
+  
+  @keyframes javascript {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 98.2%;
+    }
+  
+  }
+  
+  @keyframes typescript {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 90.2%;
+    }
+  
+  }
+  
+  @keyframes java {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 99%;
+    }
+  
+  }
+  
+  @keyframes bootstrap {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 95%;
+    }
+  
+  }
+  
+  @keyframes firebase {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 100%;
+    }
+  
+  }
+  
+  @keyframes mssql {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 95%;
+    }
+  
+  }
+  
+  @keyframes angular {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 98%;
+    }
+  
+  }
+  
+  @keyframes react {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 65%;
+    }
+  
+  }
+  
+  @keyframes figma {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 72%;
+    }
+  
+  }
+  
+  @keyframes glow {
+    0% {
+      background: var(--mainColor);
+      box-shadow: none;
+  
+    }
+  
+    100% {
+      background: var(--mainColor);
+      box-shadow: var(--secondary-Color);
+    }
+  
+  }

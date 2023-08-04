@@ -1,0 +1,41 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+  }
+  
+  .about-img img {
+    border-radius: 50%;
+    width: 550px;
+    height: 550px;
+  }
+  
+  .about-img {
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: var(--mainColor);
+  }
+  
+  .about-text {
+    width: 45%;
+    line-height: 2;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-btn {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    display: center;
+  }
+  
+  hr{
+    border-top: 2px solid var(--mainColor);
+  }
